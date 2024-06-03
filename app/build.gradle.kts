@@ -72,4 +72,8 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     implementation(libs.androidx.room.ktx)
+
+    implementation(libs.hilt.android)
+    implementation(libs.hilt.android.compiler)
+
 }

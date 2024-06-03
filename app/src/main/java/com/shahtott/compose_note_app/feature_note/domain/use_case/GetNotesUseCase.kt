@@ -6,8 +6,9 @@ import com.shahtott.compose_note_app.feature_note.domain.util.NoteOrder
 import com.shahtott.compose_note_app.feature_note.domain.util.OrderType
 import kotlinx.coroutines.flow.map
 import java.util.Locale
+import javax.inject.Inject
 
-class GetNotesUseCase(
+class GetNotesUseCase @Inject constructor(
     private val noteRepository: NoteRepository
 ) {
     operator fun invoke(

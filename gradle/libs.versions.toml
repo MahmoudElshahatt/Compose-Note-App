@@ -9,8 +9,8 @@ lifecycleRuntimeKtx = "2.8.0"
 activityCompose = "1.9.0"
 composeBom = "2023.08.00"
 roomKtx = "2.6.1"
-room-compiler = "2.3.0"
 uiSystemController = "0.27.0"
+hilt = "2.48"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -30,7 +30,8 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
 androidx-room-compiler = { group = "androidx.room:room-compiler", name = "room-compiler" }
 accompanist-uiSystemController = { group = "com.google.accompanist", name = "accompanist-systemuicontroller", version.ref = "uiSystemController" }
-
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
 
 
 [plugins]
