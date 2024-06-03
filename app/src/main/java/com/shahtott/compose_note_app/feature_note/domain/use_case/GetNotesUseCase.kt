@@ -1,7 +1,6 @@
 package com.shahtott.compose_note_app.feature_note.domain.use_case
 
 
-import androidx.compose.ui.text.toLowerCase
 import com.shahtott.compose_note_app.feature_note.domain.repository.NoteRepository
 import com.shahtott.compose_note_app.feature_note.domain.util.NoteOrder
 import com.shahtott.compose_note_app.feature_note.domain.util.OrderType
