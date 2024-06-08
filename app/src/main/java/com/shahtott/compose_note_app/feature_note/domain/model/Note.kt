@@ -20,3 +20,8 @@ data class Note(
         )
     }
 }
+
+sealed class InvalidNoteException() : Throwable() {
+    class InvalidTitleNoteException : InvalidNoteException()
+    class InvalidContentNoteException : InvalidNoteException()
+}

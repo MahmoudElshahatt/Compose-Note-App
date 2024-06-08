@@ -6,6 +6,7 @@ import com.shahtott.compose_note_app.feature_note.data.data_source.room.NoteData
 import com.shahtott.compose_note_app.feature_note.data.data_source.room.NoteDataBase.Companion.DATABASE_NAME
 import com.shahtott.compose_note_app.feature_note.data.repository_impl.NoteRepositoryImpl
 import com.shahtott.compose_note_app.feature_note.domain.repository.NoteRepository
+import com.shahtott.compose_note_app.feature_note.domain.use_case.AddNoteUseCase
 import com.shahtott.compose_note_app.feature_note.domain.use_case.DeleteNoteUseCase
 import com.shahtott.compose_note_app.feature_note.domain.use_case.GetNotesUseCase
 import com.shahtott.compose_note_app.feature_note.domain.use_case.NoteUseCase
@@ -40,7 +41,8 @@ object AppModule {
     fun provideNoteUseCase(repository: NoteRepository): NoteUseCase {
         return NoteUseCase(
             getNotesUseCase = GetNotesUseCase(repository),
-            deleteNoteUseCase = DeleteNoteUseCase(repository)
+            deleteNoteUseCase = DeleteNoteUseCase(repository),
+            addNoteUseCase = AddNoteUseCase(repository),
         )
     }
 }
