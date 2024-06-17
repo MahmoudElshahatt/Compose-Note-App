@@ -22,7 +22,7 @@ fun OrderSection(
 
     Column {
         Row(
-            modifier = Modifier.fillMaxWidth(),
+            modifier = modifier,
             verticalAlignment = Alignment.CenterVertically
         ) {
             DefaultRadioButton(

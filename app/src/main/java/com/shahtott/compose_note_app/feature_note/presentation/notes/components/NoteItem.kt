@@ -38,7 +38,7 @@ fun NoteItem(
     modifier: Modifier = Modifier,
     cornerRadius: Dp = 10.dp,
     cutCornerSize: Dp = 30.dp,
-    onDelete: () -> Unit
+    onDelete: (Note) -> Unit
 ) {
     Box(modifier = modifier) {
         Canvas(modifier = Modifier.matchParentSize(), onDraw = {
@@ -93,7 +93,7 @@ fun NoteItem(
         }
 
         IconButton(
-            onClick = onDelete,
+            onClick = { onDelete(note) },
             modifier = Modifier.align(Alignment.BottomEnd)
         ) {
             Icon(
