@@ -30,7 +30,6 @@ class NotesViewModel @Inject constructor(
 
 
     init {
-
         getNotes(NoteOrder.Date(OrderType.Descending))
     }
 
