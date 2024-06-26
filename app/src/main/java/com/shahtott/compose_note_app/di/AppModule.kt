@@ -8,6 +8,7 @@ import com.shahtott.compose_note_app.feature_note.data.repository_impl.NoteRepos
 import com.shahtott.compose_note_app.feature_note.domain.repository.NoteRepository
 import com.shahtott.compose_note_app.feature_note.domain.use_case.AddNoteUseCase
 import com.shahtott.compose_note_app.feature_note.domain.use_case.DeleteNoteUseCase
+import com.shahtott.compose_note_app.feature_note.domain.use_case.GetNoteUseCase
 import com.shahtott.compose_note_app.feature_note.domain.use_case.GetNotesUseCase
 import com.shahtott.compose_note_app.feature_note.domain.use_case.NoteUseCase
 import dagger.Module
@@ -43,6 +44,7 @@ object AppModule {
             getNotesUseCase = GetNotesUseCase(repository),
             deleteNoteUseCase = DeleteNoteUseCase(repository),
             addNoteUseCase = AddNoteUseCase(repository),
+            getNoteUseCase = GetNoteUseCase(repository)
         )
     }
 }

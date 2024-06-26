@@ -1,10 +1,9 @@
 package com.shahtott.compose_note_app.feature_note.domain.use_case
 
-import com.shahtott.compose_note_app.feature_note.domain.model.InvalidNoteException
 import com.shahtott.compose_note_app.feature_note.domain.model.Note
 import com.shahtott.compose_note_app.feature_note.domain.repository.NoteRepository
+import com.shahtott.compose_note_app.feature_note.domain.util.InvalidNoteException
 import javax.inject.Inject
-import kotlin.jvm.Throws
 
 class AddNoteUseCase @Inject constructor(
     private val noteRepository: NoteRepository
