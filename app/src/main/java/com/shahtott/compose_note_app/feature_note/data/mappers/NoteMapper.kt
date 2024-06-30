@@ -7,7 +7,8 @@ fun NoteEntity.toNote() = Note(
     title = this.title,
     content = this.content,
     timeStamp = this.timeStamp,
-    color = this.color
+    color = this.color,
+    id = this.id
 )
 
 fun Note.toNoteEntity() = NoteEntity(
